@@ -10,7 +10,7 @@
 <style>
 #HotelWeb {
   display: flex;
-  /* width: 80vw; */
+  width: 80vw;
   height: 100vh;
 }
 

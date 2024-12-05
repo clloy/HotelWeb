@@ -21,7 +21,7 @@
       <main class="content">
         <header>
           <h3>预定<img src="../assets/icons/箭头.png" alt="首页"></h3>
-          <div class="user-info">用户1213867832425235</div>
+          <div class="user-info"><img src="../assets/icons/用户照片.png" id="userphoto">用户1213867832425235<img src="../assets/icons/下箭头.png" id="arrow"></div>
         </header>
   
         <!-- 当 showNewReservation 为 false 时显示预定列表 -->
@@ -78,13 +78,13 @@
   
         <!-- 当 showNewReservation 为 true 时显示新建预订单 -->
         <section v-if="showNewReservation" class="new-reservation">
-            <button @click="closeNewReservation">返回</button>
           <header>
-            <h3>新建预订单</h3>
+            <button @click="closeNewReservation">返回</button>
           </header>
   
           <form @submit.prevent="saveReservation">
             <div class="form-group">
+              <h3>新建预订单</h3>
               <label>姓名：</label>
               <input v-model="newReservation.name" type="text" required />
   
@@ -262,6 +262,14 @@
     background-color: #D9EDFF;
   }
   
+  /* 主内容区域 */
+.content {
+  margin-left: 255px; /* 避开侧边栏 */
+  background-color: #F5F6FA; /* 主内容区背景色 */
+  min-height: 100vh; /* 确保背景色占满页面高度 */
+  width: 1300px;
+}
+
   .content header h3{
     display: flex; /* 使用Flexbox布局 */
     flex-direction: row;
@@ -273,7 +281,7 @@
     overflow-y: auto; /* 保证内容区域可以滚动 */
   }
 
-    .content header img{
+    .content header h3 img{
         width: 20px;  /* 图标宽度 */
         height: 20px; /* 图标高度 */
         margin-top: 5px;
@@ -282,11 +290,31 @@
     }
 
   .content header .user-info{
-    /* flex-direction: row; */
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     margin-left: 0px; /* 确保主内容区不被侧边栏遮挡 */
     width: auto;
     overflow-y: auto; /* 保证内容区域可以滚动 */
+    background: #fff;
+    border-radius: 23px; /* 可选的圆角效果 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  #userphoto{
+        width: 30px;  /* 图标宽度 */
+        height: 30px; /* 图标高度 */
+        margin-top: 2px;
+        margin-left: 3px;
+        margin-right: 10px; /* 图标和文本之间的间隔 */
+  }
+
+  #arrow{
+        width: 13px;  /* 图标宽度 */
+        height: 13px; /* 图标高度 */
+        margin-top: 5px;
+        margin-left: 14px;
+        margin-right: 10px; /* 图标和文本之间的间隔 */
   }
 
   .reservation-list{
@@ -305,6 +333,7 @@
   header {
     display: flex;
     justify-content: space-between;
+    margin-right: 100px;
     align-items: center;
   }
   
@@ -343,10 +372,6 @@
     margin-bottom: 20px;
     flex-wrap: wrap;
   }
-
-  .new-reservation header h3{
-    margin-left: 0px;
-  }
   
   input[type="text"],
   select,
@@ -376,7 +401,7 @@
   }
   
   button:hover {
-    background: #CCEAFF;
+    background: #2d92da;
   }
   </style>
   

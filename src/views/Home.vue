@@ -373,6 +373,7 @@ export default {
       }
       alert('登录成功');
       this.showLoginDialog = false;
+      this.$router.push({name:'ReserveEmp'})
     },
     handleRegister() {
       if (

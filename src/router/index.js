@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-// import Home from '../views/ReserveEmp.vue'
+import ReserveEmp from '../views/ReserveEmp.vue'
 
 
 const routes = [
@@ -9,6 +9,11 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  {
+    path:'/',
+    name:'ReserveEmp',
+    component: ReserveEmp
+  }
   // 其他路由配置
 ]
 

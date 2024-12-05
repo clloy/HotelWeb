@@ -210,7 +210,7 @@
   
   .sidebar {
     width: 15rem;
-    background: #f8f9fa;
+    background: #fff;
     padding: 0.5rem;
     height: 100%;
     position: fixed; /* 使侧边栏固定 */

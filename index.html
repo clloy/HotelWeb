@@ -7,7 +7,22 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="root"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
+
+  <style>
+
+    @media (min-width: 1280px) {
+      #root {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2rem;
+    }
+    }
+
+#root {
+    margin: 0 auto;
+    font-weight: normal;
+}
+  </style>
 </html>

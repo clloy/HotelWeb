@@ -200,7 +200,6 @@
     display: flex;
     flex-direction: row;
     background: #F5F6FA;
-    /* background-size: 1400px 1400px */
   }
   
   #app {
@@ -210,31 +209,31 @@
   }
   
   .sidebar {
-    width: 220px;
+    width: 15rem;
     background: #f8f9fa;
-    padding: 10px;
+    padding: 0.5rem;
     height: 100%;
     position: fixed; /* 使侧边栏固定 */
     top: 0;
     left: 0;
     bottom: 0;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px; /* 可选的圆角效果 */
+    box-shadow: 0.1rem 0 0.4rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.7rem; /* 可选的圆角效果 */
   }
 
   /* 侧边栏头部图片样式 */
 .sidebar-header {
-  margin-top: 19px;
+  margin-top: 1.5rem;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px; /* 图片与下面内容之间的间距 */
+  margin-bottom: 1.2rem; /* 图片与下面内容之间的间距 */
 }
 
 .sidebar-logo {
   width: 80%; /* 设置图片宽度为侧边栏的100% */
-  max-width: 200px; /* 图片的最大宽度 */
+  max-width: 14rem; /* 图片的最大宽度 */
   height: auto; /* 保持图片的纵横比例 */
-  border-radius: 10px; /* 可选的圆角效果 */
+  border-radius: 0.5rem; /* 可选的圆角效果 */
 }
   .sidebar ul {
     list-style: none;
@@ -242,7 +241,9 @@
   }
   
   .sidebar li {
-    margin: 20px 18px;
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0.9rem;
     color: #969696;
     cursor: pointer;
 
@@ -250,11 +251,11 @@
 
   /* 设置图标的大小 */
   .sidebar li img {
-    width: 20px;  /* 图标宽度 */
-    height: 20px; /* 图标高度 */
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 10px; /* 图标和文本之间的间隔 */
+    width: 1.4rem;  /* 图标宽度 */
+    height: 1.4rem; /* 图标高度 */
+    margin-top: 0.2rem;
+    margin-left: 1.2rem;
+    margin-right: 0.9rem; /* 图标和文本之间的间隔 */
   }
   
   .sidebar .active {
@@ -264,49 +265,49 @@
   
   /* 主内容区域 */
 .content {
-  margin-left: 255px; /* 避开侧边栏 */
+  margin-left: 3rem; /* 避开侧边栏 */
   background-color: #F5F6FA; /* 主内容区背景色 */
   min-height: 100vh; /* 确保背景色占满页面高度 */
-  width: 1300px;
+  width: 81rem;
 }
 
   .content header h3{
     display: flex; /* 使用Flexbox布局 */
     flex-direction: row;
-    padding: 15px;
+    padding: 1rem;
     color: #515050;
-    font-size: 17px;
-    margin-left: 255px; /* 确保主内容区不被侧边栏遮挡 */
+    font-size: 1.1rem;
+    margin-left: 16rem; /* 确保主内容区不被侧边栏遮挡 */
     width: auto;
     overflow-y: auto; /* 保证内容区域可以滚动 */
   }
 
     .content header h3 img{
-        width: 20px;  /* 图标宽度 */
-        height: 20px; /* 图标高度 */
-        margin-top: 5px;
-        margin-left: 0px;
-        margin-right: 10px; /* 图标和文本之间的间隔 */
+        width: 1.3rem;  /* 图标宽度 */
+        height: 1.3rem; /* 图标高度 */
+        margin-top: 0.3rem;
+        margin-left: 0rem;
+        margin-right: 0.3rem; /* 图标和文本之间的间隔 */
     }
 
   .content header .user-info{
     display: flex;
     align-items: center;
-    padding: 5px;
-    margin-left: 0px; /* 确保主内容区不被侧边栏遮挡 */
+    padding: 0.3rem;
+    margin-left: 0rem; /* 确保主内容区不被侧边栏遮挡 */
     width: auto;
     overflow-y: auto; /* 保证内容区域可以滚动 */
     background: #fff;
-    border-radius: 23px; /* 可选的圆角效果 */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1.3rem; /* 可选的圆角效果 */
+    box-shadow: 0.2re  0 0.3rem rgba(0, 0, 0, 0.1);
   }
 
   #userphoto{
-        width: 30px;  /* 图标宽度 */
-        height: 30px; /* 图标高度 */
-        margin-top: 2px;
-        margin-left: 3px;
-        margin-right: 10px; /* 图标和文本之间的间隔 */
+        width: 2rem;  /* 图标宽度 */
+        height: 2rem; /* 图标高度 */
+        margin-top: 0.1rem;
+        margin-left: 0.2rem;
+        margin-right: 0.7rem; /* 图标和文本之间的间隔 */
   }
 
   #arrow{

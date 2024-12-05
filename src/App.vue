@@ -26,4 +26,8 @@
     margin: auto;
   }
 }
+
+.title-bold, .title-regular {
+    font-family: SimSun, Microsoft YaHei, serif;
+}
 </style>
